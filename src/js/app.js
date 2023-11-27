@@ -40,9 +40,10 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name}</h1>
+          <h2>${variables.lastName}</h2>
           <h2>${variables.role}</h2>
           <h3>${variables.country}</h3>
-          <ul class="position-right">
+          <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/${variables.twitter}"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${variables.github}"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/school/${variables.linkedin}"><i class="fab fa-linkedin"></i></a></li>
@@ -70,10 +71,10 @@ window.onload = function() {
     github: null,
     linkedin: null,
     instagram: null,
-    name: "Nombre",
-    lastName: "LastName",
-    role: "Role",
-    country: "Country",
+    name: "Andrea",
+    lastName: "No seas cruel",
+    role: "Ya se",
+    country: "Quedo feo",
     city: "City"
   };
   render(window.variables); // render the card for the first time
